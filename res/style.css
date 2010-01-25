@@ -1,0 +1,113 @@
+body {
+ margin: 0px 50px;
+ padding: 0px;
+ font-family: tahoma, arial, sans-serif;
+}
+
+h1 {
+ margin: 0px;
+ padding: 3px 10px;
+ color: #fff;
+ background-color: #006;
+ font-size: 2em;
+ font-family: serif;
+}
+
+div#menu {
+ background-color: #ccc;
+ padding: 0px; 
+ background-image: url('br.png');
+ background-position: bottom right;
+ background-repeat: no-repeat;
+ height: 40px;
+}
+
+div#menu img {
+ float: left;
+}
+
+div#menu a {
+ color: #339;
+ padding: 0px 10px;
+}
+
+div#menu a:visited {
+ color: #333;
+}
+
+span#links {
+ float: left;
+ padding-top: 10px;
+}
+
+span#rlinks {
+ float: right;
+ padding-top: 10px;
+ padding-right: 25px;
+}
+
+div#content {
+ padding: 5px 10px;
+ line-height: 150%;
+}
+
+div.oneThird {
+ width: 30%;
+}
+
+div.right {
+ float: right;
+ padding-left: 20px;
+}
+
+table.form  {
+ border-collapse: collapse;
+ margin: 0px 0px 10px 0px;
+}
+
+table.form td, table.form th {
+ border: 1px solid #666;
+ padding: 5px;
+}
+
+table.form th {
+ background-color: #ccc;
+ text-align: right;
+}
+
+table.form input {
+ border: 0px;
+ width: 200px;
+}
+
+div.quote {
+ margin: 0px 10px;
+ padding: 5px 10px 5px;
+}
+
+div.quote p { margin: 0px 0px 5px 0px; }
+
+div.odd {
+ background-color: #ddd;
+ border-top: 10px solid #fff;
+ border-bottom: 10px solid #fff;
+}
+
+div.quotebody {
+ font-size: small;
+}
+
+.rate {
+ float: right;
+}
+
+div.stats em {
+ font-style: normal;
+ font-weight: bold;
+}
+
+div.nav {
+ margin: 10px;
+ padding-left: 10px;
+ padding-bottom: 20px; 
+}

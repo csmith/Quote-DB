@@ -1,0 +1,3 @@
+[submodule "openid"]
+	path = openid
+	url = git://chris.smith.name/~chris/poidsy
