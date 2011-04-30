@@ -3,6 +3,7 @@
  require_once('inc/account.php');
  require_once('inc/database.php');
  require_once('inc/settings.php');
+ require_once('inc/tags.php');
 
  if (!isset($_SESSION['uid'])) {
   header('Location: '.BASE);
@@ -15,6 +16,9 @@
   }
   $sql = 'INSERT INTO quotes (quote_quote, quote_time, user_id) VALUES (\''.m($_POST['quote']).'\', '.time().', '.$_SESSION['uid'].')';
   mysql_query($sql);
+
+  doAutoTags(mysql_insert_id());
+
   header('Location: '.BASE.'latest');
   exit;
  }

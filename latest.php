@@ -1,6 +1,7 @@
 <?PHP
 
  require_once('inc/database.php');
+ require_once('inc/tags.php');
 
  define('TITLE', 'Latest');
 
@@ -36,6 +37,7 @@
 
 ?>
   </p>
+<?PHP showTags($row['quote_id']); ?>
   <div class="quotebody">
    <?PHP echo nl2br(htmlentities($row['quote_quote'], ENT_QUOTES, 'UTF-8')); ?>
   </div>
