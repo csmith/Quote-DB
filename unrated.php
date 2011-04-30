@@ -53,7 +53,7 @@
 ?>
   </p>
   <div class="quotebody">
-   <?PHP echo nl2br(htmlentities($row['quote_quote'])); ?>
+   <?PHP echo nl2br(htmlentities($row['quote_quote'], ENT_QUOTES, 'UTF-8')); ?>
   </div>
  </div>
 <?PHP
