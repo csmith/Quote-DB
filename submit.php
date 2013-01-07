@@ -17,7 +17,8 @@
   $sql = 'INSERT INTO quotes (quote_quote, quote_time, user_id) VALUES (\''.m($_POST['quote']).'\', '.time().', '.$_SESSION['uid'].')';
   mysql_query($sql);
 
-  doAutoTags(mysql_insert_id());
+  // Broken, see issue #1 - https://github.com/csmith/Quote-DB/issues/1
+  // doAutoTags(mysql_insert_id());
 
   header('Location: '.BASE.'latest');
   exit;
