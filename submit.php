@@ -17,7 +17,7 @@
   $sql = 'INSERT INTO quotes (quote_quote, quote_time, user_id) VALUES (\''.m($_POST['quote']).'\', '.time().', '.$_SESSION['uid'].')';
   mysql_query($sql);
 
-  doAutoTags(mysql_insert_id());
+  addAutoTags(mysql_insert_id());
 
   header('Location: '.BASE.'latest');
   exit;
